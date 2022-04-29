@@ -15,7 +15,7 @@ const Counter = () => {
         <View style = {styles.countBox}>
             <Text style = {styles.countText}>{count}</Text>
             <Button 
-                onPress={() => {setCount(count + 1)}}
+                onPress={() => {setCount((prev) => prev+1)}}
                 title = {"カウント"}
             />
         </View>
